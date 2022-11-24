@@ -8,12 +8,12 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // estraggo un numero random per il giocatore 1
 
-const randomNumber1 = Math.floor(Math.random() * 10 + 1);
+const randomNumber1 = Math.floor(Math.random() * 6 + 1);
 console.log(randomNumber1);
 
 // estraggo un numero random per il giocatore 2
 
-const randomNumber2 = Math.floor(Math.random() * 10 + 1);
+const randomNumber2 = Math.floor(Math.random() * 6 + 1);
 console.log(randomNumber2);
 
 //stabilisco il vincitore in base al numero più alto 
