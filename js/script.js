@@ -4,26 +4,15 @@
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-// creo la lista di numeri da 1 a 6 
-const numbers = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6'
-]
-
-console.log (numbers);
 
 // estraggo un numero random per il giocatore 1
 
-const randomNumber1 = numbers[Math.floor(Math.random() * numbers.length)];
+const randomNumber1 = Math.floor(Math.random() * 10 + 1);
 console.log(randomNumber1);
 
 // estraggo un numero random per il giocatore 2
 
-const randomNumber2 = numbers[Math.floor(Math.random() * numbers.length)];
+const randomNumber2 = Math.floor(Math.random() * 10 + 1);
 console.log(randomNumber2);
 
 //stabilisco il vincitore in base al numero più alto 
@@ -35,10 +24,11 @@ if (randomNumber1 > randomNumber2) {
     console.log('Giocatore 2, hai vinto!');
  }
 
+ //stabilisco un pareggio 
+
  else if (randomNumber2 == randomNumber1) 
     console.log('Pareggio, rilanciare il dado!');
 */
-
 
 
 
