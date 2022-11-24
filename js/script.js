@@ -74,17 +74,23 @@ userButton.addEventListener ('click', function() {
     const mailValue = userMail.value;
     console.log(mailValue);
 
-//scorro la lista
+// definisco la variabile del riusltato
+let mailOk = false;
+
+//scorro la lista e verifico se la mail è presente
 
 for ( let i = 0 ; i < mailList.length ; i++) {
-    
     if (mailList[i] === mailValue) {
+        mailOk = true;    
+    } 
+}
+
+if (mailOk === true) {
         console.log('Il tuo codice di accesso è howyoudoin');   
     }
-    
-    else if (mailList[i] != mailValue) {
+
+    else {
         console.log('Accesso negato'); 
     }
-}
 
 });
