@@ -3,6 +3,7 @@
  * 1. Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
+*/
 
 
 // estraggo un numero random per il giocatore 1
@@ -28,7 +29,6 @@ if (randomNumber1 > randomNumber2) {
 
  else if (randomNumber2 == randomNumber1) 
     console.log('Pareggio, rilanciare il dado!');
-*/
 
 
 
