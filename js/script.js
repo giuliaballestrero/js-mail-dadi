@@ -39,6 +39,10 @@ if (randomNumber1 > randomNumber2) {
     console.log('Pareggio, rilanciare il dado!');
 */
 
+
+
+
+
 /**
  *     2. Mail
 Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere.
@@ -54,12 +58,8 @@ const userMail = document.getElementById('userMail');
 //recupero l'elemento html che al suo click permette di inviare i valori
 const userButton = document.querySelector('button');
 
-//quando l'utente clicca raccolgo il valore inserito
-userButton.addEventListener ('click', function() {
-    const mailValue = userMail.value;
-    console.log(mailValue)
+//creo una lista di email da verificare per sapere chi può accedere 
 
-//creo una lista di email da verificare per sapere chi puà accedere 
 const mailList = [
     'chandlerbing@friends.com',
     'rachelgreen@friends.com',
@@ -68,8 +68,23 @@ const mailList = [
     'joeytribbiani@friends.com',
     'rossgeller@friends.com'
 ]
-console.log (mailList);
+
+//quando l'utente clicca raccolgo il valore inserito
+userButton.addEventListener ('click', function() {
+    const mailValue = userMail.value;
+    console.log(mailValue);
 
 //scorro la lista
+
+for ( let i = 0 ; i < mailList.length ; i++) {
+    
+    if (mailList[i] === mailValue) {
+        console.log('Il tuo codice di accesso è howyoudoin');   
+    }
+    
+    else if (mailList[i] != mailValue) {
+        console.log('Accesso negato'); 
+    }
+}
 
 });
