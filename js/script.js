@@ -3,7 +3,6 @@
  * 1. Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
-*/
 
 // creo la lista di numeri da 1 a 6 
 const numbers = [
@@ -38,16 +37,29 @@ if (randomNumber1 > randomNumber2) {
 
  else if (randomNumber2 == randomNumber1) 
     console.log('Pareggio, rilanciare il dado!');
-
+*/
 
 /**
  *     2. Mail
 Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere.
 Stampa un messaggio appropriato sull’esito del controllo.
+ */
 
 
-//creo una lista di email 
+//creo il form html dove l'utente inserirà la sua mail
 
+//recupero l'elemento html dove l'utente inserirà la mail
+const userMail = document.getElementById('userMail');
+
+//recupero l'elemento html che al suo click permette di inviare i valori
+const userButton = document.querySelector('button');
+
+//quando l'utente clicca raccolgo il valore inserito
+userButton.addEventListener ('click', function() {
+    const mailValue = userMail.value;
+    console.log(mailValue)
+
+//creo una lista di email da verificare per sapere chi puà accedere 
 const mailList = [
     'chandlerbing@friends.com',
     'rachelgreen@friends.com',
@@ -56,6 +68,8 @@ const mailList = [
     'joeytribbiani@friends.com',
     'rossgeller@friends.com'
 ]
+console.log (mailList);
 
-console.log (mailList)
- */
+//scorro la lista
+
+});
